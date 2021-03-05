@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__body{
+    width: 598px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__title{
+    width: 354px;
+    height: 29px;
+    margin-bottom: 10px;
+
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+
+    color: #263238;
+}
+
+.personal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    width: 485px;
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__element{
+    position: relative;
+}
+
+.form__element_label{
+    left: 10px;
+    top: -5px;
+    font-size: 12px;
+    position: absolute;
+
+    background-color: white;
+    padding: 0 5px 0 5px ;
+}
+
+.input-field{
+    width: 232px;
+    height: 56px;
+
+    border: 1px solid #263238;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    text-decoration: none;
+    padding-left: 10px;
+    letter-spacing: 0.01em;
+
+    font-size: 16px;
+    font-weight: normal;
+
+    -webkit-box-shadow: inset 0 0 0 50px #fff;
+    -webkit-text-fill-color: #000;
+}
+
+.input-field:focus{
+    border: 2px solid #1BB55C;
+}
+
+
+.message{
+    width: 485px;
+    height: 120px;
+}
+
+.message__area{
+    width: 485px;
+    height: 120px;
+    padding: 20px 0 0 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #263238;
+
+    resize: none;
+
+    z-index: 2;
+}
+
+.message__area:hover{
+    cursor: text;
+}
+
+.message__area:focus{
+    border: 2px solid #1BB55C;
+}
+
+.main__politics{
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #263238;
+}
+
+.button{
+    width: 205px;
+    height: 45px;
+    outline: none;
+
+    background: #1BB55C;
+    border: 1px solid #1BB55C;
+    border-radius: 4px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button__text{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.form__element-error{
+    max-width: 200px;
+    padding-left: 10px;
+    color: red;
+    font-size: 12px;
+}

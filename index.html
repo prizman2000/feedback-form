@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Feedback form</title>
+</head>
+<body>
+<div class="main">
+    <div class="main__body">
+        <div class="main__title">Обратная форма</div>
+        <form class="form main__form">
+            <div class="personal form__personal">
+                <label class="name personal__element form__element">
+                    <span class="form__element_label">ФИО</span>
+                    <input id="name" class="input-field name__area"/>
+                    <div id="name__error" class="form__element-error"></div>
+                </label>
+                <label class="phone personal__element form__element">
+                    <span class="form__element_label">Телефон</span>
+                    <input id="phone" class="input-field phone__area"/>
+                    <div id="phone__error" class="form__element-error"></div>
+                </label>
+            </div>
+            <label class="email form__element">
+                <span class="form__element_label form__element_label_email">E-mail</span>
+                <input id="email" class="input-field email__area"/>
+                <div id="email__error" class="form__element-error"></div>
+            </label>
+            <label class="message form__element">
+                <span class="form__element_label form__element_label_message">Сообщение</span>
+                <textarea id="message" class="message__area"></textarea>
+            </label>
+        </form>
+        <div class="main__politics">Отправляя форму, Вы соглашаетесь на <u>обработку персональных данных</u></div>
+        <button id="submit" class="button main__button"><span class="button__text">Отправить</span></button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
